@@ -1,0 +1,167 @@
+B2B SAAS BRAND VOICE GUIDELINES
+TechFlow Analytics - Updated March 2026
+
+COMPANY MISSION
+Help marketing teams make better decisions faster through data-driven insights and intuitive analytics.
+
+OUR BRAND VOICE
+Professional but approachable. Data-driven but human. Confident but never arrogant.
+
+CORE VOICE PRINCIPLES
+
+1. CLEAR VALUE PROPOSITION
+B2B buyers are busy. Lead with benefits, back with proof, make the value immediately obvious.
+
+Guidelines:
+- Start with outcomes: "Reduce reporting time by 50%" not "Our platform has many features"
+- Use specific metrics and numbers
+- Show ROI clearly and quickly
+- Avoid vague promises: Replace "improve performance" with "increase conversion rates by 23%"
+- Format: Problem → Solution → Proof
+- Example: "Spending 10 hours on weekly reports? Automate them in 10 minutes. Join 500+ marketing teams saving 20 hours per week."
+
+2. PROFESSIONALLY CONFIDENT
+We know our product works. We've proven it. We're confident without being cocky.
+
+Guidelines:
+- Use data and case studies, not hype
+- "Our customers see 40% faster time-to-insight" not "We're revolutionizing the industry"
+- Avoid superlatives: best, greatest, most innovative
+- Use customer proof: "Used by 500+ teams at companies like Spotify, Airbnb, Stripe"
+- Be direct: "This will save you time" not "This might help you work more efficiently"
+- Show, don't tell: Replace "easy to use" with "Get insights in 3 clicks"
+
+3. TECHNICALLY CREDIBLE
+We speak to smart people who understand marketing and data. We don't dumb it down, but we don't overcomplicate either.
+
+Guidelines:
+- Use industry terminology correctly: attribution, CAC, LTV, funnel analysis
+- Explain new concepts simply: "Multi-touch attribution = see which channels actually drive conversions"
+- Balance technical depth with accessibility
+- Assume baseline knowledge; don't patronize
+- Provide depth in resources, clarity in marketing
+- Example: "Track full-funnel attribution across 12+ channels with our unified data model" not "See where your customers come from"
+
+4. ACTION-ORIENTED
+Every piece of content should drive toward a clear next step. No dead ends.
+
+Guidelines:
+- Strong, clear CTAs: "Start free trial" not "Learn more"
+- Show the path forward: "Book a demo → See your data → Start tracking in 48 hours"
+- Use active verbs: Track, optimize, analyze, improve, scale
+- Make next steps obvious and easy
+- Remove friction in language: "No credit card required" "14-day free trial" "Cancel anytime"
+- Example: "Try TechFlow free for 14 days. No credit card. Cancel anytime." not "Interested in learning about our solutions?"
+
+TONE BY CONTENT TYPE
+
+Website Landing Pages:
+- Scannable with clear hierarchy
+- Lead with strongest benefit
+- Use bullet points for features
+- Social proof above the fold
+- Clear, prominent CTA
+
+Blog Posts:
+- Educational and helpful
+- Data-driven insights
+- Practical takeaways
+- Industry trends and analysis
+- Example: "5 Attribution Models Compared: Which Drives Better ROI?"
+
+Email Campaigns:
+- Subject lines: Specific benefit or data point
+- Personalized where possible
+- Scannable (bullets, short paragraphs)
+- Single clear CTA
+- Example subject: "Your Q1 marketing data is ready" not "Check out our latest insights"
+
+Social Media (LinkedIn):
+- Professional tone
+- Lead with insight or data
+- Encourage discussion
+- Share customer wins
+- Example: "40% of marketers still use last-click attribution. Here's why that's costing you conversions 👇"
+
+Product Copy:
+- Feature → Benefit format
+- Technical accuracy required
+- Include use cases
+- Show integrations
+- Example: "Slack integration: Get daily performance alerts where your team already works"
+
+LANGUAGE TO USE
+
+POWER VERBS:
+✓ Track, measure, analyze, optimize
+✓ Scale, automate, streamline
+✓ Increase, improve, reduce
+✓ Identify, discover, unlock
+✓ Convert, engage, retain
+
+DATA LANGUAGE:
+✓ "40% increase in qualified leads"
+✓ "Save 20 hours per week"
+✓ "Used by 500+ teams"
+✓ "4.8/5 on G2"
+✓ "$2M+ in attributed revenue"
+
+AVOID:
+✗ Leverage, utilize, synergy
+✗ Revolutionary, game-changing, disruptive
+✗ Solutions, ecosystem, paradigm shift
+✗ World-class, best-in-class
+✗ Cutting-edge, next-generation
+✗ Empower (overused in SaaS)
+
+GRAMMAR & STYLE
+- Use contractions for approachability: "We're" "You'll" "Don't"
+- Numbers: Use numerals (10+, 40%, $2M)
+- Percentages: Always with % symbol
+- Lists: Parallel structure required
+- Headlines: Sentence case, not title case
+- Hyphens: Multi-touch, cross-channel, full-funnel
+
+EXAMPLE REWRITES
+
+BEFORE: "Our revolutionary analytics solution leverages cutting-edge AI technology to empower marketing teams to achieve unprecedented levels of performance optimization across all channels."
+
+AFTER: "See which marketing channels drive revenue. Track ROI across all campaigns in one dashboard. Make better budget decisions with data, not guesses."
+
+BEFORE: "TechFlow offers a comprehensive suite of analytics capabilities designed to meet the diverse needs of modern marketing organizations."
+
+AFTER: "Track attribution, analyze funnels, and report on ROI—all in one platform. Built for marketing teams at companies like yours."
+
+BEFORE: "Interested in learning more about how our platform might be able to help your team?"
+
+AFTER: "See TechFlow in action. Book a 15-minute demo and get your first insights tomorrow."
+
+PROOF POINTS WE USE
+- Customer count: "500+ marketing teams"
+- Specific metrics: "40% faster time-to-insight"
+- Time savings: "Save 20 hours per week"
+- G2 rating: "4.8/5 on G2"
+- Customer logos: Spotify, Airbnb, Stripe
+- Integration count: "Connects to 50+ tools"
+
+COMPETITIVE POSITIONING
+DO:
+✓ Show specific differentiators with data
+✓ "Only platform with real-time multi-touch attribution"
+✓ "2x faster than alternatives (verified by G2)"
+
+DON'T:
+✗ Name competitors directly
+✗ Generic "better than" claims
+✗ Negative positioning
+
+VOICE CHECKLIST
+Before publishing, ask:
+□ Did I lead with a clear benefit?
+□ Is there proof (data, testimonial, case study)?
+□ Would a busy VP of Marketing immediately understand the value?
+□ Is the CTA obvious and friction-free?
+□ Did I remove buzzwords and jargon?
+□ Is this specific enough to be credible?
+
+Remember: B2B buyers are skeptical and busy. Respect their time. Prove your value. Make the next step obvious.
