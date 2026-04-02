@@ -231,7 +231,7 @@
                 luxury: "Crafted from the finest Italian leather, each piece tells a story of timeless elegance. Discover the art of refined simplicity.",
                 b2b: "Our analytics platform helps teams make data-driven decisions faster. Track performance, identify trends, optimize ROI.",
                 hospitality: "Your sanctuary awaits. From sunrise yoga to rooftop stargazing, every moment is designed to restore and inspire.",
-                social: "Prevention > reaction \uD83C\uDF31 Small daily choices = big health wins. What's your wellness habit? \uD83D\uDC47"
+                social: "Prevention > reaction 🌱 Small daily choices = big health wins. What's your wellness habit? 👇"
             };
 
             const handleFileUpload = async (event) => {
@@ -269,10 +269,11 @@
                         });
 
                         const data = await response.json();
-                        const cleanJson = data.content[0].text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+                        const cleanJson = data.content[0].text.replace(/```json\n?/g, '').replace(/``a\n?/g, '').trim();
                         const extracted = JSON.parse(cleanJson);
 
-                        const { brand_name, ...criteria } = extracted;
+
+                       const { brand_name, ...criteria } = extracted;
                         setGuidelinesCriteria(criteria);
                         setUploadedGuidelines({
                             fileName: file.name,
@@ -618,7 +619,7 @@
                                         </div>
                                     )}
                                 </div>
-                            </div>
+                                                 </div>
                         )}
 
                         {/* ── TRAIN MODE ── */}
@@ -661,7 +662,6 @@
                                         disabled={loading}
                                         className="bb-btn-primary"
                                         style={{width: '100%', padding: '15px', borderRadius: '6px', fontWeight: '600', fontSize: '1rem'}}
-                                        
                                     >
                                         {loading ? <span>Learning Your Voice<span className="loading-dot">…</span></span> : 'Train AI on My Brand Voice'}
                                     </button>
@@ -722,7 +722,7 @@
                                             />
                                         </div>
                                         {compareAnalysis.after && (
-                                            <div className="bb-card" style={{padding: '24px'}õ>
+                                            <div className="bb-card" style={{padding: '24px'}}>
                                                 <h3 style={{fontFamily: '"Playfair Display", serif', fontWeight: '700', fontSize: '1.0625rem', color: '#2C2C2C', marginBottom: '18px'}}>After Scores</h3>
                                                 <div>
                                                     {Object.keys(getCurrentCriteria()).map((key) =>
@@ -742,7 +742,8 @@
                                 </div>
 
                                 <button
-                                 disabled={loading}
+                                    onClick={handleCompare}
+                                    disabled={loading}
                                     className="bb-btn-rust"
                                     style={{width: '100%', padding: '15px', borderRadius: '6px', fontWeight: '600', fontSize: '1rem'}}
                                 >
