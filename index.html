@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -164,6 +165,11 @@
 <body>
     <div id="root"></div>
 
+    <script>
+        if (typeof pdfjsLib !== 'undefined') {
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        }
+    </script>
     <script type="text/babel">
         const { useState, useRef } = React;
 
@@ -245,12 +251,17 @@
                     try {
                         let extractedText = '';
 
-                        if (file.type === 'text/plain') {
-                            extractedText = e.target.result;
-                        } else if (file.type === 'application/pdf') {
-                            alert('PDF support: For best results, copy/paste text from your PDF into the "Train" mode instead. This ensures accurate text extraction.');
-                            setLoading(false);
-                            return;
+                        if (file.type === 'application/pdf') {
+                            const arrayBuffer = await file.arrayBuffer();
+                            const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                            let pdfText = '';
+                            const maxPages = Math.min(pdf.numPages, 30);
+                            for (let i = 1; i <= maxPages; i++) {
+                                const page = await pdf.getPage(i);
+                                const content = await page.getTextContent();
+                                pdfText += content.items.map(item => item.str).join(' ') + '\n';
+                            }
+                            extractedText = pdfText;
                         } else {
                             extractedText = e.target.result;
                         }
@@ -289,7 +300,11 @@
                     }
                 };
 
-                reader.readAsText(file);
+                if (file.type === 'application/pdf') {
+                    reader.readAsArrayBuffer(file);
+                } else {
+                    reader.readAsText(file);
+                }
             };
 
             const analyzeContent = async (textToAnalyze, criteriaToUse = null) => {
@@ -464,7 +479,7 @@
                                         Upload Your Brand Guidelines
                                     </h2>
                                     <p style={{fontSize: '0.9375rem', opacity: 0.88, marginBottom: '4px'}}>Upload your Language Book, Brand Guidelines, or Tone of Voice document</p>
-                                    <p style={{fontSize: '0.8125rem', opacity: 0.7}}>Supports: TXT files · PDF: copy/paste text into "Train" mode</p>
+                                    <p style={{fontSize: '0.8125rem', opacity: 0.7}}>Supports: TXT and PDF files</p>
                                 </div>
                                 <div style={{flexShrink: 0}}>
                                     <input ref={fileInputRef} type="file" accept=".txt,.pdf,.doc,.docx" onChange={handleFileUpload} style={{display: 'none'}} />
@@ -608,7 +623,7 @@
                                                     analysis[key] && <ScoreCard key={key} label={key} {...analysis[key]} />
                                                 )}
                                             </div>
-                                            <button
+                                               <button
                                                 onClick={() => setAnalysis(null)}
                                                 className="bb-btn-ghost"
                                                 style={{marginTop: '20px', width: '100%', padding: '12px', borderRadius: '6px', fontWeight: '500', fontSize: '0.9375rem'}}
@@ -633,7 +648,7 @@
                                             Paste 3–5 examples of your best content. The AI will learn your patterns and create custom criteria.
                                         </p>
                                         <p style={{fontSize: '0.875rem', color: '#7A9E87', marginTop: '8px', fontWeight: '500'}}>
-                                            Tip: If you have PDFs, copy/paste the text here instead of uploading.
+                                            Tip: You can also upload your brand guidelines as a PDF using the Upload button above.
                                         </p>
                                     </div>
 
